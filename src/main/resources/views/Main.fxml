@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.MainController">
+   <children>
+      <BorderPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #fff; -fx-background-radius: 20; -fx-border-color: #000; -fx-border-radius: 20;">
+         <left>
+            <VBox fx:id="vbxLeftSideBar" prefHeight="718.0" prefWidth="246.0" style="-fx-border-color: transparent #000 transparent transparent;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnHome" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#openTab" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: transparent;" text="Home" textFill="#505050">
+                     <font>
+                        <Font name="Open Sans Regular" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" top="20.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnSearch" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#openTab" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: transparent;" text="Search" textFill="#505050">
+                     <font>
+                        <Font name="Open Sans Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="30.0" top="20.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnLikedTracks" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#openTab" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: transparent;" text="Liked Tracks" textFill="#505050">
+                     <font>
+                        <Font name="Open Sans Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="30.0" top="20.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnAboutUs" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#openTab" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: transparent;" text="About Us" textFill="#505050">
+                     <font>
+                        <Font name="Open Sans Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="30.0" top="20.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnLogIn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#openTab" prefHeight="38.0" prefWidth="250.0" style="-fx-background-color: transparent;" text="Log In" textFill="#505050">
+                     <font>
+                        <Font name="Open Sans Regular" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="30.0" top="20.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <AnchorPane fx:id="acpWindowTitleBar" prefHeight="64.0" prefWidth="1280.0" style="-fx-border-color: transparent transparent #000 transparent;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="imvLogo" fitHeight="27.0" fitWidth="200.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="30.0">
+                     <image>
+                        <Image url="@../images/icons/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblLogo" layoutX="61.0" layoutY="20.0" text="BEAT">
+                     <font>
+                        <Font name="Open Sans Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imvClose" fitHeight="20.0" fitWidth="20.0" layoutX="1227.0" layoutY="23.0" onMousePressed="#exit" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="30.0">
+                     <image>
+                        <Image url="@../images/icons/close.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="imvResize" fitHeight="20.0" fitWidth="20.0" layoutX="1170.0" layoutY="23.0" onMousePressed="#resize" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="80.0">
+                     <image>
+                        <Image url="@../images/icons/resize.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="imvMinimize" fitHeight="20.0" fitWidth="20.0" layoutX="1148.0" layoutY="32.0" onMousePressed="#minimize" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="130.0">
+                     <image>
+                        <Image url="@../images/icons/minimize.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <BorderPane fx:id="bdpContentTab" prefHeight="654.4" prefWidth="1032.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
